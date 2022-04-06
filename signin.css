@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family:  'Open Sans', sans-serif;
+}
+
+.d1{
+    display: flex;
+    margin: -8px;
+}
+
+.d2{
+    padding: 40px;
+}
+
+h1{
+    font-family:  'Helvetica', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+h2{
+    font-family:  'Helvetica', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 24rem;
+    height: 3.3rem;
+    border-radius: 10vw;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-signup{
+    background-color: #1da1f2;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease;
+    margin-bottom: 20px;
+}
+
+.btn-signup:hover{
+    background-color: #1f94dd;  
+}
+
+.btn-login{
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+}
+
+.footer{
+    padding: 1rem 2%;
+}
+
+.footer nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer nav div{
+    margin: .3rem .5rem;
+    font-size: 13px;
+    color: #536471;
+}
+
+.footer nav a{
+    text-decoration: none;
+    font-size:13px;
+    color: #536471;
+    margin: .5rem .3rem;
+    transition: all .2s ease;
+}
+
+.footer nav a:hover{
+    border-bottom: 1px solid #536471;
+}
+
+@media (max-width: 1050px) {
+    .d1{
+        height: 50vh;
+        flex: 0 0 100vw;
+    }
+
+    .d2{
+        order: -1;
+        max-width: 600px;
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    .btn{
+        display: flex;
+        width: 15rem;
+        margin-right: 1rem;
+    }
+
+    h1{
+        font-size: 8vw;
+    }
+}
